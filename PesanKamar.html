@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel - Pemesanan Kamar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">LUXURY HOTEL</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="Promo.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Promo</a>
+                    <a href="Fasilitas.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Fasilitas</a>
+                    <a href="CekKamar.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Cek Kamar</a>
+                    <a href="TentangHotel.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Tentang Hotel</a>
+                    <a href="Wisata.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Wisata</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen pt-24 pb-16 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <!-- Booking Form Card -->
+            <section class="bg-white shadow-lg rounded-lg p-8">
+                <h1 class="text-3xl font-bold text-center text-gray-800 mb-10">Detail Pemesanan Kamar</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Room Details -->
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Kamar yang Dipilih</h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Jenis Kamar</label>
+                                <select class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300">
+                                    <option>Kamar Standar</option>
+                                    <option>Kamar Deluxe</option>
+                                    <option>Suite</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Tanggal Check-In</label>
+                                <input type="date" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Tanggal Check-Out</label>
+                                <input type="date" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Opsi Sarapan</label>
+                                <select class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300">
+                                    <option>Tanpa Sarapan</option>
+                                    <option>Termasuk Sarapan (+ Rp 100.000)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details -->
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Detail Pembayaran</h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                                <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" placeholder="Masukkan nama lengkap">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" placeholder="email@example.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Metode Pembayaran</label>
+                                <select class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300">
+                                    <option>Kartu Kredit</option>
+                                    <option>Transfer Bank</option>
+                                    <option>OVO</option>
+                                    <option>Gopay</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center mt-12">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-3 rounded-lg text-lg font-medium transition duration-300 transform hover:scale-105">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Hotel Info -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Luxury Hotel</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>1234 Street, City, Country</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: info@luxuryhotel.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="Promo.html" class="text-gray-300 hover:text-white transition duration-300">Promo</a></li>
+                        <li><a href="Fasilitas.html" class="text-gray-300 hover:text-white transition duration-300">Fasilitas</a></li>
+                        <li><a href="TentangHotel.html" class="text-gray-300 hover:text-white transition duration-300">Tentang Hotel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Follow Us</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center text-gray-400">
+                &copy; 2024 Luxury Hotel. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
